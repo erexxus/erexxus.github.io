@@ -1,8 +1,7 @@
-<!DOCTYPE html>
 <html lang="cs">
 <head>
   <meta charset="UTF-8">
-  <title>Video 1</title>
+  <title>Video 3</title>
   <style>
     body {
       text-align: center;
@@ -23,7 +22,7 @@
   <h1>EXPERIMENT</h1>
   <p>Tohle je pouze test. Video se po spuštění přehraje pouze jednou bez možnosti video přetáčet nebo zastavit. Po skončení tě přesměruje na dotazník. :3</p>
 
-  <button onclick="playVideo()">Spustit video</button>
+  <button onclick="playVideo()">Spustit video se zvukem</button>
 
   <div>
     <video id="myVideo" width="720">
@@ -38,7 +37,7 @@
     video.addEventListener('contextmenu', e => e.preventDefault());
     video.addEventListener('seeking', () => video.currentTime = 0);
     video.addEventListener('ended', () => {
-      window.location.href = "https://forms.gle/P8eQWwYx4GxrgRP88";
+      window.location.href = "https://forms.gle/CPCA9DdQTfutvwcu7";
     });
 
     function playVideo() {
