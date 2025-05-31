@@ -32,8 +32,7 @@
 
   <h1>EXPERIMENT</h1>
   <p>
-    Tohle je pouze test. Video se po spuštění přehraje pouze jednou bez možnosti video přetáčet nebo zastavit.
-    Po skončení tě přesměruje na dotazník. :3
+    Tohle je pouze test. Video se po spuštění přehraje pouze jednou bez možnosti video přetáčet nebo zastavit. Nezapomeňte si zapnout zvuk ať maximalizujete příjem smyslových podnětů. Po skončení videa budeš přesměrován na dotazník. :3
   </p>
 
   <a href="video.html">Klikněte pro přehrání videa</a>
