@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="cs">
 <head>
   <meta charset="UTF-8">
@@ -18,8 +17,14 @@
       font-size: 18px;
       margin-bottom: 40px;
     }
-    video::-webkit-media-controls-timeline {
-      display: none !important; /* Skryje časovou osu */
+    a {
+      font-size: 20px;
+      text-decoration: none;
+      color: #3366cc;
+      font-weight: bold;
+    }
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -31,28 +36,7 @@
     Po skončení tě přesměruje na dotazník. :3
   </p>
 
-  <video id="myVideo" width="720" autoplay muted>
-    <source src="Tiny Dog Barking.mp4" type="video/mp4">
-    Váš prohlížeč nepodporuje HTML5 video.
-  </video>
-
-  <script>
-    const video = document.getElementById("myVideo");
-    video.controls = false;
-
-    // Zamez přetáčení
-    video.addEventListener('seeking', () => {
-      video.currentTime = 0;
-    });
-
-    // Zamez pravému kliknutí
-    video.addEventListener('contextmenu', e => e.preventDefault());
-
-    // Přesměrování po skončení
-    video.addEventListener('ended', () => {
-      window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSdjyKc4PUbYi6lu4owINCLrJ1LgnIgCOXq-0xU2NUEidHdYcg/viewform?usp=header";
-    });
-  </script>
+  <a href="video.html">Klikněte pro přehrání videa</a>
 
 </body>
 </html>
