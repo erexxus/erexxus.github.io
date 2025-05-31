@@ -39,10 +39,10 @@
 
   <h1>EXPERIMENT</h1>
   <p>
-    Tohle je pouze test. Video se po spuštění přehraje pouze jednou bez možnosti video přetáčet nebo zastavit. Nezapomeňte si zapnout zvuk ať maximalizujete příjem smyslových podnětů. Po skončení videa budeš přesměrován na dotazník. :3
+    Tohle je pouze test. Video se po spuštění přehraje pouze jednou bez možnosti jej přetáčet nebo zastavit. Nezapomeň si zapnout zvuk ať maximalizuješ příjem smyslových podnětů. Po skončení videa budeš přesměrován na dotazník. :3
   </p>
 
-  <a href="#" onclick="redirectToRandomVideo()">Klikněte pro přehrání videa</a>
+  <a href="#" onclick="redirectToRandomVideo()">Klikni pro přehrání videa</a>
 
 </body>
 </html>
