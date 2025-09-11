@@ -98,9 +98,9 @@
     // Po skončení videa -> přesměrování na náhodný dotazník
     video.addEventListener('ended', () => {
       const urls = [
-        "https://forms.gle/YhjA47jR8WPLN7Lr5",
-        "https://forms.gle/XXXXXXXXXXXXXXX1",
-        "https://forms.gle/XXXXXXXXXXXXXXX2"
+        "https://forms.gle/hcZoZWJdRYLQvQhJ8",
+        "https://forms.gle/juvHuyvj8GENeD2s6",
+        "https://forms.gle/Rbjhn2kmVUxp1YwN6"
       ];
       const randomUrl = urls[Math.floor(Math.random() * urls.length)];
       window.location.href = randomUrl;
