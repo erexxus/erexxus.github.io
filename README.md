@@ -84,7 +84,7 @@
   <p>
     Po kliknutí na tlačítko <em>„Spustit video“</em> budete přesměrováni na stránku, 
     kde se Vám jednou přehraje krátké video. Po jeho skončení budete automaticky 
-    přesměrováni na dotazník. Vyplnění dotazníku nebude trvat déle než 5 minut.
+    přesměrováni na dotazník. Vyplnění dotazníku nebude trvat déle než 10 minut.
   </p>
 
   <div class="team">
