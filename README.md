@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="cs">
 <head>
   <meta charset="UTF-8">
@@ -60,11 +59,11 @@
 <body>
 
   <div class="contact">
-    Kontakt: <br>
+    Kontakt na organizátory: <br>
     Alex Král – <a href="mailto:alex.kra01@upol.cz">alex.kra01@upol.cz</a>
   </div>
 
-  <h1>Úvodní informace k experimentu</h1>
+  <h1>Hokej a pozornost</h1>
 
   <p><strong>Vážený participante, vážená participantko,</strong></p>
 
