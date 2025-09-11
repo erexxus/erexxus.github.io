@@ -1,55 +1,62 @@
+<!DOCTYPE html>
 <html lang="cs">
 <head>
   <meta charset="UTF-8">
-  <title>EXPERIMENT</title>
+  <title>Úvodní informace</title>
   <style>
     body {
-      text-align: center;
       font-family: Arial, sans-serif;
-      padding: 50px;
       background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+      padding: 40px;
+      max-width: 800px;
+      margin: auto;
     }
     h1 {
-      font-size: 48px;
-      margin-bottom: 20px;
+      text-align: center;
+      margin-bottom: 30px;
     }
     p {
-      font-size: 18px;
-      margin-bottom: 40px;
+      text-align: justify;
+      margin-bottom: 15px;
     }
-    a {
-      font-size: 20px;
-      text-decoration: none;
-      color: #3366cc;
-      font-weight: bold;
-    }
-    a:hover {
-      text-decoration: underline;
+    .team {
+      margin-top: 30px;
+      font-style: italic;
+      text-align: right;
     }
   </style>
-  <script>
-    function redirectToRandomVideo() {
-      const pages = ["video1.html", "video2.html", "video3.html"];
-      const randomIndex = Math.floor(Math.random() * pages.length);
-      window.location.href = pages[randomIndex];
-    }
-  </script>
 </head>
 <body>
 
-  <h1>EXPERIMENT</h1>
+  <h1>Úvodní informace k experimentu</h1>
+
+  <p><strong>Vážený participante, vážená participantko,</strong></p>
+
   <p>
-    Vážený participante, vážená participantko,
-
-děkujeme za zájem o účast v tomto experimentu, který vznikl v rámci zápočtu do předmětu Experimentální psychologie 2. Jeho účelem je mapování znalostí týkajících se hokeje a jeho vztahu s pozorností diváka během hokejového utkání u studentů ve věku od 18 do 26 let. 
-Účast v experimentu je naprosto dobrovolná a anonymní, s možností z něj kdykoliv bez udání důvodů vystoupit. Rozhodnete-li se pokračovat, dáváte souhlas k zpracování Vašich odpovědí, které budou sloužit výhradně pro účely tohoto výzkumu. Po kliknutí na tlačítko níže se Vám jednou přehraje krátké video po jehož skončení budete  automaticky přesměrování na dotazník. Vyplnění dotazníku nebude trvat déle než 5 minut.
-
-Za vaši účast děkuje výzkumný tým
-Matyáš Žák, Markéta Srbová, Alex Král
-
+    Děkujeme za zájem o účast v tomto experimentu, který vznikl v rámci zápočtu do 
+    předmětu <em>Experimentální psychologie 2</em>. Jeho účelem je mapování znalostí 
+    týkající se hokeje a jeho vztahu s pozorností diváka během hokejového utkání 
+    u studentů ve věku od 18 do 26 let.
   </p>
 
-  <a href="#" onclick="redirectToRandomVideo()">Klikni pro přehrání videa</a>
+  <p>
+    Účast v experimentu je naprosto dobrovolná a anonymní, s možností z něj kdykoliv 
+    bez udání důvodů vystoupit. Rozhodnete-li se pokračovat, dáváte souhlas k zpracování 
+    Vašich odpovědí, které budou sloužit výhradně pro účely tohoto výzkumu.
+  </p>
+
+  <p>
+    Po kliknutí na tlačítko <em>„Spustit video“</em> se Vám jednou přehraje krátké video, 
+    po jehož skončení budete automaticky přesměrováni na dotazník. Vyplnění dotazníku 
+    nebude trvat déle než 5 minut.
+  </p>
+
+  <div class="team">
+    <p>Za Vaši účast děkuje výzkumný tým:</p>
+    <p>Matyáš Žák, Markéta Srbová, Alex Král</p>
+  </div>
 
 </body>
 </html>
