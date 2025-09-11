@@ -1,8 +1,7 @@
-<!DOCTYPE html>
 <html lang="cs">
 <head>
   <meta charset="UTF-8">
-  <title>Úvodní informace</title>
+  <title>Experiment – úvod a video</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -12,9 +11,9 @@
       padding: 40px;
       max-width: 800px;
       margin: auto;
+      text-align: center;
     }
     h1 {
-      text-align: center;
       margin-bottom: 30px;
     }
     p {
@@ -26,11 +25,34 @@
       font-style: italic;
       text-align: right;
     }
+    button {
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    video {
+      display: none;
+      margin-top: 20px;
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    video::-webkit-media-controls-timeline {
+      display: none !important;
+    }
   </style>
 </head>
 <body>
 
-  <h1>Hokej a pozornost</h1>
+  <h1>Úvodní informace k experimentu</h1>
 
   <p><strong>Vážený participante, vážená participantko,</strong></p>
 
@@ -57,6 +79,41 @@
     <p>Za Vaši účast děkuje výzkumný tým:</p>
     <p>Matyáš Žák, Markéta Srbová, Alex Král</p>
   </div>
+
+  <button onclick="playVideo()">Spustit video</button>
+
+  <div>
+    <video id="myVideo" width="720">
+      <source src="video.mp4" type="video/mp4">
+      Váš prohlížeč nepodporuje HTML5 video.
+    </video>
+  </div>
+
+  <script>
+    const video = document.getElementById("myVideo");
+
+    // Zakázat pravé tlačítko a přetáčení
+    video.addEventListener('contextmenu', e => e.preventDefault());
+    video.addEventListener('seeking', () => video.currentTime = 0);
+
+    // Po skončení videa -> přesměrování na náhodný dotazník
+    video.addEventListener('ended', () => {
+      const urls = [
+        "https://forms.gle/YhjA47jR8WPLN7Lr5",
+        "https://forms.gle/XXXXXXXXXXXXXXX1",
+        "https://forms.gle/XXXXXXXXXXXXXXX2"
+      ];
+      const randomUrl = urls[Math.floor(Math.random() * urls.length)];
+      window.location.href = randomUrl;
+    });
+
+    function playVideo() {
+      document.querySelector("button").style.display = "none"; // schovat tlačítko
+      video.style.display = "block"; // zobrazit video
+      video.controls = false;
+      video.play();
+    }
+  </script>
 
 </body>
 </html>
