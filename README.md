@@ -52,7 +52,7 @@
 </head>
 <body>
 
-  <h1>Úvodní informace k experimentu</h1>
+  <h1>Hokej a pozornost</h1>
 
   <p><strong>Vážený participante, vážená participantko,</strong></p>
 
