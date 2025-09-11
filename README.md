@@ -82,7 +82,7 @@
   <p>
     Po kliknutí na tlačítko <em>„Spustit video“</em> budete přesměrováni na stránku, 
     kde se Vám ihned a pouze jednou přehraje jedno ze tří krátkých videí, které nelze zastavit. Po jeho skončení budete automaticky 
-    přesměrováni na dotazník. <b>Vyplnění dotazníku nebude trvat déle než 10 minut.</b>
+    přesměrováni na dotazník. <b>Dotazník obsahuje 14 otázek a jeho vyplnění nebude trvat déle než 10 minut.</b>
   </p>
 
   <div class="team">
