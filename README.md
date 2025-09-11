@@ -87,7 +87,7 @@
   </p>
 
   <div class="team">
-    <p>Za Vaši účast děkuje výzkumný tým:</p>
+    <p>Za Vaši účast děkuje výzkumný tým</p>
     <p>Matyáš Žák, Markéta Srbová, Alex Král</p>
   </div>
 
