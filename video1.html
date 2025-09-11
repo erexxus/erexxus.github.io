@@ -34,11 +34,11 @@
   <script>
     const video = document.getElementById("myVideo");
 
-    // Zamezení pravého tlačítka a přetáčení
+    // Zakázat pravé tlačítko a přetáčení
     video.addEventListener('contextmenu', e => e.preventDefault());
     video.addEventListener('seeking', () => video.currentTime = 0);
 
-    // Po skončení videa -> náhodně vybrat dotazník
+    // Po skončení videa -> přesměrování na náhodný dotazník
     video.addEventListener('ended', () => {
       const urls = [
         "https://forms.gle/juvHuyvj8GENeD2s6",
