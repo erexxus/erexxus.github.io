@@ -69,13 +69,12 @@
 
   <p>
     děkujeme za zájem o účast v tomto experimentu, který vznikl v rámci zápočtu do 
-    předmětu <em>Experimentální psychologie 2</em>. Jeho účelem je mapování znalostí 
-    týkající se hokeje a jeho vztahu s pozorností diváka během hokejového utkání 
-    u studentů ve věku od 18 do 26 let.
+    předmětu <em>Experimentální psychologie 2</em>. <b>Je určen pro studenty ve věku 18-26 let<b> a jeho účelem 
+    je mapování znalostí týkající se hokeje a jeho vztahu s pozorností diváka během hokejového utkání.
   </p>
 
   <p>
-    Účast v experimentu je naprosto dobrovolná a anonymní s možností z něj kdykoliv 
+    Účast v experimentu je naprosto <b>dobrovolná a anonymní<b> s možností z něj kdykoliv 
     bez udání důvodů odstoupit. Rozhodnete-li se pokračovat, dáváte souhlas k zpracování 
     Vašich odpovědí, které budou sloužit výhradně pro účely tohoto výzkumu.
   </p>
@@ -83,7 +82,7 @@
   <p>
     Po kliknutí na tlačítko <em>„Spustit video“</em> budete přesměrováni na stránku, 
     kde se Vám ihned a pouze jednou přehraje jedno ze tří krátkých videí, které nelze zastavit. Po jeho skončení budete automaticky 
-    přesměrováni na dotazník. Vyplnění dotazníku nebude trvat déle než 10 minut.
+    přesměrováni na dotazník. <b>Vyplnění dotazníku nebude trvat déle než 10 minut.<b>
   </p>
 
   <div class="team">
