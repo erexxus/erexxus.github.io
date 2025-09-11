@@ -1,7 +1,8 @@
+<!DOCTYPE html>
 <html lang="cs">
 <head>
   <meta charset="UTF-8">
-  <title>Experiment – úvod a video</title>
+  <title>Experiment – úvod</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -12,6 +13,7 @@
       max-width: 800px;
       margin: auto;
       text-align: center;
+      position: relative;
     }
     h1 {
       margin-bottom: 30px;
@@ -38,21 +40,31 @@
     button:hover {
       background-color: #0056b3;
     }
-    video {
-      display: none;
-      margin-top: 20px;
-      max-width: 100%;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    .contact {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-size: 14px;
+      color: #555;
+      text-align: right;
     }
-    video::-webkit-media-controls-timeline {
-      display: none !important;
+    .contact a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+    .contact a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
 
-  <h1>Hokej a pozornost</h1>
+  <div class="contact">
+    Kontakt: <br>
+    Alex Král – <a href="mailto:alex.kra01@upol.cz">alex.kra01@upol.cz</a>
+  </div>
+
+  <h1>Úvodní informace k experimentu</h1>
 
   <p><strong>Vážený participante, vážená participantko,</strong></p>
 
@@ -70,8 +82,9 @@
   </p>
 
   <p>
-    Po kliknutí na tlačítko <em>„Spustit video“</em> se Vám pouze jednou přehraje jedno ze třech krátkých videí, které nelze zastavit
-    Po skončení videa budete automaticky přesměrováni na dotazník, jehož vyplnění nebude trvat déle než 5 minut.
+    Po kliknutí na tlačítko <em>„Spustit video“</em> budete přesměrováni na stránku, 
+    kde se Vám jednou přehraje krátké video. Po jeho skončení budete automaticky 
+    přesměrováni na dotazník. Vyplnění dotazníku nebude trvat déle než 5 minut.
   </p>
 
   <div class="team">
@@ -79,40 +92,7 @@
     <p>Matyáš Žák, Markéta Srbová, Alex Král</p>
   </div>
 
-  <button onclick="playVideo()">Spustit video</button>
-
-  <div>
-    <video id="myVideo" width="720">
-      <source src="video.mp4" type="video/mp4">
-      Váš prohlížeč nepodporuje HTML5 video.
-    </video>
-  </div>
-
-  <script>
-    const video = document.getElementById("myVideo");
-
-    // Zakázat pravé tlačítko a přetáčení
-    video.addEventListener('contextmenu', e => e.preventDefault());
-    video.addEventListener('seeking', () => video.currentTime = 0);
-
-    // Po skončení videa -> přesměrování na náhodný dotazník
-    video.addEventListener('ended', () => {
-      const urls = [
-        "https://forms.gle/hcZoZWJdRYLQvQhJ8",
-        "https://forms.gle/juvHuyvj8GENeD2s6",
-        "https://forms.gle/Rbjhn2kmVUxp1YwN6"
-      ];
-      const randomUrl = urls[Math.floor(Math.random() * urls.length)];
-      window.location.href = randomUrl;
-    });
-
-    function playVideo() {
-      document.querySelector("button").style.display = "none"; // schovat tlačítko
-      video.style.display = "block"; // zobrazit video
-      video.controls = false;
-      video.play();
-    }
-  </script>
+  <button onclick="window.location.href='video.html'">Spustit video</button>
 
 </body>
 </html>
