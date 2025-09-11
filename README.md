@@ -68,21 +68,21 @@
   <p><strong>Vážený participante, vážená participantko,</strong></p>
 
   <p>
-    Děkujeme za zájem o účast v tomto experimentu, který vznikl v rámci zápočtu do 
+    děkujeme za zájem o účast v tomto experimentu, který vznikl v rámci zápočtu do 
     předmětu <em>Experimentální psychologie 2</em>. Jeho účelem je mapování znalostí 
     týkající se hokeje a jeho vztahu s pozorností diváka během hokejového utkání 
     u studentů ve věku od 18 do 26 let.
   </p>
 
   <p>
-    Účast v experimentu je naprosto dobrovolná a anonymní, s možností z něj kdykoliv 
-    bez udání důvodů vystoupit. Rozhodnete-li se pokračovat, dáváte souhlas k zpracování 
+    Účast v experimentu je naprosto dobrovolná a anonymní s možností z něj kdykoliv 
+    bez udání důvodů odstoupit. Rozhodnete-li se pokračovat, dáváte souhlas k zpracování 
     Vašich odpovědí, které budou sloužit výhradně pro účely tohoto výzkumu.
   </p>
 
   <p>
     Po kliknutí na tlačítko <em>„Spustit video“</em> budete přesměrováni na stránku, 
-    kde se Vám jednou přehraje krátké video. Po jeho skončení budete automaticky 
+    kde se Vám ihned a pouze jednou přehraje jedno ze tří krátkých videí, které nelze zastavit. Po jeho skončení budete automaticky 
     přesměrováni na dotazník. Vyplnění dotazníku nebude trvat déle než 10 minut.
   </p>
 
