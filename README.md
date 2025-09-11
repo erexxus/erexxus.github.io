@@ -39,7 +39,14 @@
 
   <h1>EXPERIMENT</h1>
   <p>
-    Tohle je pouze test. Video se po spuštění přehraje pouze jednou bez možnosti jej přetáčet nebo zastavit. Nezapomeň si zapnout zvuk ať maximalizuješ příjem smyslových podnětů. Po skončení videa budeš přesměrován na dotazník. :3
+    Vážený participante, vážená participantko,
+
+děkujeme za zájem o účast v tomto experimentu, který vznikl v rámci zápočtu do předmětu Experimentální psychologie 2. Jeho účelem je mapování znalostí týkajících se hokeje a jeho vztahu s pozorností diváka během hokejového utkání u studentů ve věku od 18 do 26 let. 
+Účast v experimentu je naprosto dobrovolná a anonymní, s možností z něj kdykoliv bez udání důvodů vystoupit. Rozhodnete-li se pokračovat, dáváte souhlas k zpracování Vašich odpovědí, které budou sloužit výhradně pro účely tohoto výzkumu. Po kliknutí na tlačítko níže se Vám jednou přehraje krátké video po jehož skončení budete  automaticky přesměrování na dotazník. Vyplnění dotazníku nebude trvat déle než 5 minut.
+
+Za vaši účast děkuje výzkumný tým
+Matyáš Žák, Markéta Srbová, Alex Král
+
   </p>
 
   <a href="#" onclick="redirectToRandomVideo()">Klikni pro přehrání videa</a>
