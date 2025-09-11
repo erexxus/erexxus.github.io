@@ -60,7 +60,7 @@
 
   <div class="contact">
     Kontakt na organizátory: <br>
-    <a href="mailto:alex.kral01@upol.cz">alex.kra01@upol.cz</a>
+    <a href="mailto:alex.kral01@upol.cz">alex.kral01@upol.cz</a>
   </div>
 
   <h1>Hokej a pozornost</h1>
