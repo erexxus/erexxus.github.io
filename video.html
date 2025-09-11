@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <title>Experiment – video</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    video {
+      width: 100%;
+      height: auto;
+      max-height: 100vh;
+      background-color: black;
+    }
+    video::-webkit-media-controls-timeline {
+      display: none !important;
+    }
+  </style>
+</head>
+<body>
+
+  <video id="myVideo">
+    <source src="video.mp4" type="video/mp4">
+    Váš prohlížeč nepodporuje HTML5 video.
+  </video>
+
+  <script>
+    const video = document.getElementById("myVideo");
+
+    // blokace přetáčení a menu
+    video.addEventListener('contextmenu', e => e.preventDefault());
+    video.addEventListener('seeking', () => video.currentTime = 0);
+
+    // přehrát hned po načtení
+    window.onload = () => {
+      video.controls = false;
+      video.play();
+    };
+
+    // po skončení přesměrovat náhodně na dotazník
+    video.addEventListener('ended', () => {
+      const urls = [
+        "https://forms.gle/YhjA47jR8WPLN7Lr5",
+        "https://forms.gle/XXXXXXXXXXXXXXX1",
+        "https://forms.gle/XXXXXXXXXXXXXXX2"
+      ];
+      const randomUrl = urls[Math.floor(Math.random() * urls.length)];
+      window.location.href = randomUrl;
+    });
+  </script>
+
+</body>
+</html>
