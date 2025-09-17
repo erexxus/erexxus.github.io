@@ -76,7 +76,7 @@
   <p>
     Účast v experimentu je naprosto <b>dobrovolná a anonymní</b> s možností z něj kdykoliv 
     odstoupit. Rozhodnete-li se pokračovat, dáváte souhlas k zpracování 
-    Vašich odpovědí, které budou sloužit výhradně pro účely tohoto výzkumu. :3
+    Vašich odpovědí, které budou sloužit výhradně pro účely tohoto výzkumu. 
   </p>
 
   <p>
