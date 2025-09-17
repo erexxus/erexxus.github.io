@@ -91,6 +91,6 @@
   </div>
 
   <button onclick="window.location.href='video.html'">Spustit video</button>
-
+  
 </body>
 </html>
