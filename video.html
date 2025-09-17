@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="cs">
 <head>
   <meta charset="UTF-8">
@@ -32,25 +33,17 @@
 
   <script>
     const video = document.getElementById("myVideo");
-
-    // Zakázat pravé tlačítko a přetáčení
     video.addEventListener('contextmenu', e => e.preventDefault());
     video.addEventListener('seeking', () => video.currentTime = 0);
-
-    // Přehrát po kliknutí uživatele (v iOS musí být interakce)
     window.onload = () => {
-      // Můžeme video spustit po kliknutí na celou stránku
-      document.body.addEventListener('click', () => {
-        video.play();
-      }, { once: true });
+      video.controls = false;
+      video.play();
     };
-
-    // Po skončení videa -> náhodné přesměrování
-    video.addEventListener('ended', () => {
+    video.addEventListener("ended", () => {
       const urls = [
-        "https://forms.gle/juvHuyvj8GENeD2s6",
-        "https://forms.gle/hcZoZWJdRYLQvQhJ8",
-        "https://forms.gle/Rbjhn2kmVUxp1YwN6"
+        "https://forms.gle/YhjA47jR8WPLN7Lr5",
+        "https://forms.gle/XXXXXXXXXXXXXXX1",
+        "https://forms.gle/XXXXXXXXXXXXXXX2"
       ];
       const randomUrl = urls[Math.floor(Math.random() * urls.length)];
       window.location.href = randomUrl;
