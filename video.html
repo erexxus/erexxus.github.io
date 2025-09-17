@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="cs">
 <head>
   <meta charset="UTF-8">
@@ -8,14 +8,31 @@
       margin: 0;
       background-color: black;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       height: 100vh;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+    button {
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+    button:hover {
+      background-color: #0056b3;
     }
     video {
+      display: none;
       width: 100%;
       height: auto;
-      max-height: 100vh;
+      max-height: 80vh;
       background-color: black;
       border-radius: 8px;
     }
@@ -26,6 +43,8 @@
 </head>
 <body>
 
+  <button id="playBtn">Spustit video</button>
+
   <video id="myVideo" playsinline muted>
     <source src="video.mp4" type="video/mp4">
     Váš prohlížeč nepodporuje HTML5 video.
@@ -33,12 +52,21 @@
 
   <script>
     const video = document.getElementById("myVideo");
+    const playBtn = document.getElementById("playBtn");
+
+    // zakázat pravé tlačítko a přetáčení
     video.addEventListener('contextmenu', e => e.preventDefault());
     video.addEventListener('seeking', () => video.currentTime = 0);
-    window.onload = () => {
+
+    // kliknutí na tlačítko -> spustí video
+    playBtn.addEventListener("click", () => {
+      playBtn.style.display = "none";
+      video.style.display = "block";
       video.controls = false;
       video.play();
-    };
+    });
+
+    // po skončení videa -> náhodné přesměrování
     video.addEventListener("ended", () => {
       const urls = [
         "https://forms.gle/YhjA47jR8WPLN7Lr5",
